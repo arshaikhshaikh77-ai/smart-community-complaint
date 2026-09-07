@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   HOME SCREEN
+========================= */
+
+#homeScreen {
+    display: block;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#homeScreen h1 {
+    color: #1769aa;
+    margin-bottom: 10px;
+}
+
+#homeScreen p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: none;
+    background: #1769aa;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    display: none;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #1769aa;
+    margin-top: 0;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #1769aa;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   COMPLAINT SECTION
+========================= */
+
+.complaints-section {
+    margin-top: 25px;
+}
+
+.complaint-card {
+    background: white;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.complaint-card h3 {
+    margin-top: 0;
+    color: #1769aa;
+}
+
+.no-complaints {
+    color: #777;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-select {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+
+/* =========================
+   STAFF BAR
+========================= */
+
+.staff-bar {
+    display: none;
+    max-width: 600px;
+    margin: 25px auto 0;
+    padding: 18px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.staff-bar h2 {
+    margin: 0;
+    color: #1769aa;
+}
+
+.staff-bar p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 15px 8px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 25px;
+    color: #1769aa;
+}
+
+.stat-card p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.complaint-photo {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   VIEW BUTTON
+========================= */
+
+.view-btn {
+    background: #1769aa;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+    display: none;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #1769aa;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.login-box button {
+    margin-top: 5px;
+}
+
+#loginMessage {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* =========================
+   LOGOUT BUTTON
+========================= */
+
+#logoutBtn {
+    background: #dc3545;
+    margin-top: 10px;
+}
+/* =========================
+   RESOLUTION TRACKING
+========================= */
+
+.deadline-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #eef4f8;
+}
+
+.deadline-badge.on-time {
+    color: #1769aa;
+}
+
+.deadline-badge.overdue {
+    color: #b42318;
+    background: #fdecec;
+}
+
+.resolution-box {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.resolution-box label {
+    margin-top: 0;
+}
+
+.resolution-input {
+    min-height: 90px;
+    margin-top: 5px;
+}
+
+.save-resolution-btn {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+}

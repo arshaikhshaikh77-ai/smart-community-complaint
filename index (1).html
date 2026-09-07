@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Community Complaint</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HOME SCREEN
+    ========================== -->
+
+    <div id="homeScreen" class="home-screen">
+
+        <h1>🏘️ Smart Community Complaint</h1>
+
+        <p>
+            Report problems. Make your community better.
+        </p>
+
+        <button type="button" id="studentBtn">
+            👨‍🎓 Student / User
+        </button>
+
+        <button type="button" id="staffBtn">
+            👨‍💼 Staff Login
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         STAFF LOGIN
+    ========================== -->
+
+    <div id="loginBox" class="login-box">
+
+        <h2>👨‍💼 Staff Login</h2>
+
+        <input
+            type="email"
+            id="staffEmail"
+            placeholder="Staff Email"
+        >
+
+        <input
+            type="password"
+            id="staffPassword"
+            placeholder="Password"
+        >
+
+        <button type="button" id="loginBtn">
+            🔐 Login
+        </button>
+
+        <p id="loginMessage"></p>
+
+        <button type="button" id="backHomeBtn">
+            🏠 Back to Home
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <h1>Smart Community Complaint</h1>
+
+        <p>
+            Report problems. Make your community better.
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         STAFF BAR
+    ========================== -->
+
+    <div class="staff-bar">
+
+        <h2>👨‍💼 Staff Dashboard</h2>
+
+        <button type="button" id="logoutBtn">
+            🚪 Logout
+        </button>
+
+        <p>
+            Manage and update community complaints
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN CONTAINER
+    ========================== -->
+
+    <div class="container">
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <h3 id="totalCount">0</h3>
+
+                <p>Total Complaints</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3 id="pendingCount">0</h3>
+
+                <p>Pending</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3 id="resolvedCount">0</h3>
+
+                <p>Resolved</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN CARD -->
+
+        <div class="card">
+
+
+            <!-- =========================
+                 SUBMIT COMPLAINT SECTION
+            ========================== -->
+
+            <div id="submitSection">
+
+                <h2>📝 Submit a Complaint</h2>
+
+
+                <form>
+
+                    <label>
+                        Complaint Title
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="e.g. Street light not working"
+                        required
+                    >
+
+
+                    <label>
+                        Category
+                    </label>
+
+                    <select required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option>
+                            Road & Transport
+                        </option>
+
+                        <option>
+                            Water Supply
+                        </option>
+
+                        <option>
+                            Electricity
+                        </option>
+
+                        <option>
+                            Garbage & Cleanliness
+                        </option>
+
+                        <option>
+                            Street Light
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        Priority
+                    </label>
+
+                    <select
+                        name="priority"
+                        id="priority"
+                    >
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                        <option
+                            value="Medium"
+                            selected
+                        >
+                            Medium
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter complaint location"
+                        required
+                    >
+
+
+                    <label>
+                        Description
+                    </label>
+
+                    <textarea
+                        placeholder="Describe your problem in detail..."
+                        required
+                    ></textarea>
+
+
+                    <label>
+                        Upload Photo
+                    </label>
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                    >
+
+
+                    <button type="submit">
+                        Submit Complaint
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- =========================
+                 RECENT COMPLAINTS
+            ========================== -->
+
+            <div class="complaints-section">
+
+                <h2>
+                    📋 Recent Complaints
+                </h2>
+
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="🔍 Search complaint..."
+                    >
+
+                </div>
+
+
+                <div id="complaintList">
+
+                    <p class="no-complaints">
+                        No complaints submitted yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
